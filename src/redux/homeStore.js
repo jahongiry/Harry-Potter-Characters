@@ -1,4 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, isAsyncThunkAction } from '@reduxjs/toolkit';
+import nextId from "react-id-generator";
 
 const initialState = []; 
 
@@ -11,14 +12,48 @@ const homeInfo = createSlice ({
         names: item.name,
         image: item.image,
         actorName: item.actor,
+        house: item.house,
+        patronus: item.patronus,
+        wand: item.wand.core,
+        dateOfBirth: item.dateOfBirth,
+        hairColour: item.hairColour,
+        eyeColour: item.eyeColour,
+        id: nextId(),
       }));
       return characters
     },
-    // characters(state, action) {
-    //   const characters = action.payload.map((item) => ({
-    //     names: item.name
-    //   }));
-    // }
+
+    character(state, action) {
+      const item = action.payload
+      return {
+        names: item.name,
+        image: item.image,
+        actorName: item.actor,
+        house: item.house,
+        patronus: item.patronus,
+        wand: item.wand,
+        dateOfBirth: item.dateOfBirth,
+        hairColour: item.hairColour,
+        eyeColour: item.eyeColour,
+        id: item.id,
+      }
+    },
+
+        filter(state, action) {
+        const characters = action.payload.map((item) => ({
+        names: item.names,
+        image: item.image,
+        actorName: item.actorName,
+        house: item.house,
+        patronus: item.patronus,
+        // wand: if(item.wand.core) {item.wand.core},        
+        dateOfBirth: item.dateOfBirth,
+        hairColour: item.hairColour,
+        eyeColour: item.eyeColour,
+        id: item.id,
+      }));
+      return characters;
+    },
   }
 })
 
