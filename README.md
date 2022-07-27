@@ -51,9 +51,9 @@ To get a local copy up and running follow these simple example steps.
 Clone the repository and change the directory to portfolio
 
 ```
-  `$ git clone 'https://github.com/safar1212/traveler-hub'`
+  `$ git clone 'https://github.com/jahongiry/Harry-Potter-Characters.git'`
 
-  `$ cd traveler-hub`
+  `$ cd Harry-Potter-Characters`
 
 ```
 
