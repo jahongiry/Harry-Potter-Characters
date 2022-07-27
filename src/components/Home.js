@@ -5,6 +5,9 @@ import { useDispatch } from 'react-redux';
 import {fetchData} from '../redux/homeStore';
 import React, { useState } from "react";
 import {actions} from '../redux/homeStore';
+import classes from './Home.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 function Home() {
@@ -34,12 +37,15 @@ function Home() {
   }, [query]);
 
   return <div>
+    <div className={classes.middlePart}>
     <h2>Harry Potter Characters</h2>
     <p>Source: HP-API!</p>
     <form>
-      <input onChange={updateQuery} ref={inputRef} type="text" placeholder="Search..." name='search' />
+      <input className={classes.search} onChange={updateQuery} ref={inputRef} type="text" placeholder='Search...' name='search' />
     </form>
-    <div>
+    </div>
+    <div className={classes.itemPart}>
+    <div className={classes.card}>
       {result[0] && visible.map((data) => (
         <CharactersHome
         key= {data.id}
@@ -54,6 +60,7 @@ function Home() {
         hairColour={data.hairColour}
         eyeColour={data.eyeColour} />
       ))}
+    </div>
     </div>
   </div>
 }
