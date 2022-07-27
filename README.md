@@ -76,7 +76,7 @@ Run
 ### Authors
 | 👤 Name          | Github                                     | Twitter                                               | LinkedIn                                                       |
 | ---------------- | ------------------------------------------ | ----------------------------------------------------- | -------------------------------------------------------------- |
-| Jahongir Yusupov | [@Safar Ali](https://github.com/jahongiry) | [@SJahongir Yusupov](https://twitter.com/@JahongirYusup13) | [@Jahongir Yusupov](https://www.linkedin.com/in/@JahongirYusup13/) |
+| Jahongir Yusupov | [@jahongiry](https://github.com/jahongiry) | [@SJahongir Yusupov](https://twitter.com/@JahongirYusup13) | [@Jahongir Yusupov](https://www.linkedin.com/in/@JahongirYusup13/) |
 
 ## 🤝 Contributing
 
