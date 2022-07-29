@@ -1,5 +1,5 @@
-.middlePart {  
-  background-color: rgb(180,72,102);
+.middlePart {
+  background-color: rgb(180, 72, 102);
   text-align: center;
   color: white;
   padding: 2rem;
@@ -9,7 +9,7 @@
   width: 17%;
   height: 30%;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
 }
 
 .middlePart hr {
@@ -26,22 +26,24 @@
 
 @media screen and (max-width: 780px) {
   .middlePart img {
-  width: 35%;
-}
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .middlePart img {
-  width: 40%;
-}
-.middlePart hr {
-  width: 10%;
-}
-.middlePart h3 {
-  font-size: 1.2rem;
-}
+    width: 40%;
+  }
 
-.middlePart p {
-  font-size: 0.7rem;
-}
+  .middlePart hr {
+    width: 10%;
+  }
+
+  .middlePart h3 {
+    font-size: 1.2rem;
+  }
+
+  .middlePart p {
+    font-size: 0.7rem;
+  }
 }
