@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Harry-Potter-Characters/static/css/main.ff7efba7.css",
+    "main.js": "/Harry-Potter-Characters/static/js/main.ad6added.js",
+    "index.html": "/Harry-Potter-Characters/index.html",
+    "main.ff7efba7.css.map": "/Harry-Potter-Characters/static/css/main.ff7efba7.css.map",
+    "main.ad6added.js.map": "/Harry-Potter-Characters/static/js/main.ad6added.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff7efba7.css",
+    "static/js/main.ad6added.js"
+  ]
+}
