@@ -1,4 +1,5 @@
 {
+  "homepage": "http://jahongiry.github.io/Harry-Potter-Characters",
   "name": "air-pollution",
   "version": "0.1.0",
   "private": true,
@@ -25,6 +26,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -60,6 +63,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^4.0.0",
     "jest": "^28.1.3",
     "jest-enzyme": "^7.1.2",
     "stylelint": "^13.13.1",
