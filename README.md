@@ -4,6 +4,10 @@
 
 > This website is build using React Radux. It is about Harry Potter characters along with the some information about their actors.
 
+## Presentation
+
+https://www.loom.com/share/13db51fa6e8a40d4ad98d722cfa3ff40
+
 ## Live Version ✔️
 
 https://harry-potter-reactredux.herokuapp.com/
