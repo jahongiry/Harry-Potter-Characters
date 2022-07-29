@@ -1,5 +1,5 @@
 .characterCard {
-  background-color: rgb(230,89,129);
+  background-color: rgb(230, 89, 129);
   border-radius: 10px;
   text-align: center;
   padding-bottom: 1rem;
@@ -7,7 +7,7 @@
 }
 
 .characterCard:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
 .image {
@@ -24,39 +24,42 @@
 
 @media screen and (max-width: 1069px) {
   .image {
-  height: 18rem;
-}
+    height: 18rem;
+  }
 }
 
 @media screen and (max-width: 780px) {
   .image {
-  height: 15rem;
-}
+    height: 15rem;
+  }
 }
 
 @media screen and (max-width: 680px) {
   .image {
-  height: 11rem;
-}
-.link {
-  font-size: 0.8rem;
-}
+    height: 11rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .image {
-  height: 9rem;
-}
-.link {
-  font-size: 0.6rem;
-}
+    height: 9rem;
+  }
+
+  .link {
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .image {
-  height: 14rem;
-}
-.link {
-  font-size: 0.6rem;
-}
+    height: 14rem;
+  }
+
+  .link {
+    font-size: 0.6rem;
+  }
 }

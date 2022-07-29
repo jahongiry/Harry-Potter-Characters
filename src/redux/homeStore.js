@@ -1,14 +1,14 @@
-import { createSlice, isAsyncThunkAction } from '@reduxjs/toolkit';
-import nextId from "react-id-generator";
+import { createSlice } from '@reduxjs/toolkit';
+import nextId from 'react-id-generator';
 
-const initialState = []; 
+const initialState = [];
 
-const homeInfo = createSlice ({
+const homeInfo = createSlice({
   name: 'home',
   initialState,
   reducers: {
     initial(state, action) {
-        const characters = action.payload.map((item) => ({
+      const characters = action.payload.map((item) => ({
         names: item.name,
         image: item.image,
         actorName: item.actor,
@@ -20,11 +20,11 @@ const homeInfo = createSlice ({
         eyeColour: item.eyeColour,
         id: nextId(),
       }));
-      return characters
+      return characters;
     },
 
     character(state, action) {
-      const item = action.payload
+      const item = action.payload;
       return {
         names: item.name,
         image: item.image,
@@ -36,17 +36,16 @@ const homeInfo = createSlice ({
         hairColour: item.hairColour,
         eyeColour: item.eyeColour,
         id: item.id,
-      }
+      };
     },
 
-        filter(state, action) {
-        const characters = action.payload.map((item) => ({
+    filter(state, action) {
+      const characters = action.payload.map((item) => ({
         names: item.names,
         image: item.image,
         actorName: item.actorName,
         house: item.house,
         patronus: item.patronus,
-        // wand: if(item.wand.core) {item.wand.core},        
         dateOfBirth: item.dateOfBirth,
         hairColour: item.hairColour,
         eyeColour: item.eyeColour,
@@ -54,12 +53,12 @@ const homeInfo = createSlice ({
       }));
       return characters;
     },
-  }
-})
+  },
+});
 
-export const actions = homeInfo.actions;
+export const { actions } = homeInfo;
 
-const api = 'http://hp-api.herokuapp.com/api/characters'
+const api = 'http://hp-api.herokuapp.com/api/characters';
 
 export const fetchData = () => async (dispatch) => {
   const fetchingData = async () => {
@@ -68,8 +67,7 @@ export const fetchData = () => async (dispatch) => {
     return data;
   };
   try {
-    const testdata = await fetchingData()
-    // console.log(testdata);
+    const testdata = await fetchingData();
     dispatch(actions.initial(testdata));
   } catch (error) {
     console.log(error);

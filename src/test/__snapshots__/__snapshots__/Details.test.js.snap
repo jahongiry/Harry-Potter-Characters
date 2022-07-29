@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Builds the snapchot of the Details component Details 1`] = `
+<div
+  className="middlePart"
+>
+  <div>
+    <img
+      alt="Character"
+    />
+    <h3 />
+    <p>
+      House:
+      <span>
+         
+      </span>
+    </p>
+    <hr />
+    <h3 />
+  </div>
+</div>
+`;
+
+exports[`Builds the snapchot of the Home component Details 1`] = `
+<div
+  className="middlePart"
+>
+  <div>
+    <img
+      alt="Character"
+    />
+    <h3 />
+    <p>
+      House:
+      <span>
+         
+      </span>
+    </p>
+    <hr />
+    <h3 />
+  </div>
+</div>
+`;
