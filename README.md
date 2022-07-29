@@ -6,7 +6,7 @@
 
 ## Live Version ✔️
 
-Coming soon!
+https://harry-potter-reactredux.herokuapp.com/
 
 ## ScreenShot
 

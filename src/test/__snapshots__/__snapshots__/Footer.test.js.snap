@@ -4,9 +4,7 @@ exports[`Builds the snapchot of the footer component safely 1`] = `
 <footer
   className="footer"
 >
-  <h4
-    role="footer"
-  >
+  <h4>
     Created by Jahongir Yusupov
   </h4>
 </footer>
