@@ -1,0 +1,49 @@
+.middlePart {
+  background-color: rgb(180, 72, 102);
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.middlePart img {
+  width: 17%;
+  height: 30%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+}
+
+.middlePart hr {
+  width: 3%;
+}
+
+.middlePart p {
+  font-size: 1rem;
+}
+
+.middlePart h3 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 780px) {
+  .middlePart img {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .middlePart img {
+    width: 40%;
+  }
+
+  .middlePart hr {
+    width: 10%;
+  }
+
+  .middlePart h3 {
+    font-size: 1.2rem;
+  }
+
+  .middlePart p {
+    font-size: 0.7rem;
+  }
+}

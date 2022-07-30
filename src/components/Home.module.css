@@ -1,0 +1,66 @@
+.middlePart {
+  background-color: rgb(180, 72, 102);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.829);
+  padding: 2rem;
+}
+
+.middlePart h2 {
+  margin: 0;
+}
+
+.search {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #ec4c8a;
+  color: rgba(255, 255, 255, 0.835);
+  margin-bottom: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+}
+
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.787);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(246, 125, 156);
+  gap: 3rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 987px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 2rem 3rem;
+  }
+}

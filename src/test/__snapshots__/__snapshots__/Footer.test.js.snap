@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Builds the snapchot of the footer component safely 1`] = `
+<footer
+  className="footer"
+>
+  <h4>
+    Created by Jahongir Yusupov
+  </h4>
+</footer>
+`;
